@@ -1,0 +1,160 @@
+
+.navbar {
+    width: 100vw;
+    height: 4rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.07);
+    position: fixed;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+.colors {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-top: 0.5rem;
+}
+
+.logo a {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00fffb, #4600ff, #ff00f2, indigo, cyan, darkred, black, pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-links img {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.cart-link {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-count {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-weight: bold;
+}
+
+.cart-counter {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    background-color: red;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-weight: bold;
+}
+
+
+.nav-mobile {
+    display: none;
+   
+}
+
+@media (min-width: 310px) and (max-width: 500px) {
+
+    
+    .nav-links img {
+        display: none;
+    }
+
+    .cart-count {
+        display: none;
+    }
+
+    
+    .nav-mobile {
+        display: block;
+    }
+
+    .nav-mobile img {
+        width: 30px;
+        position: absolute;
+        right: 2.4rem;
+        bottom: -0.8rem;
+    }
+
+    .logo a h1 {
+        font-size: 1.3rem;
+        margin-left: 9px;
+    }
+
+    .cart-counter{
+        position: absolute;
+        right: 2rem;
+        top: -1.69rem;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+
+   
+    .nav-links img {
+        display: none;
+    }
+
+    .cart-count {
+        display: none;
+    }
+
+    .nav-mobile a img {
+        width: 30px;
+        margin-right: 20rem;
+    }
+
+    .logo a h1 {
+        font-size: 1.3rem;
+        margin-left: 9px;
+    }
+
+    .cart-counter {
+        font-size: 0.8rem;
+        color: red;
+        position: absolute;
+        right: rem;
+        bottom: rem;
+        width: 2rem;
+    }
+}
+
+
+
+
+
